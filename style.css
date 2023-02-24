@@ -1,0 +1,433 @@
+:root{
+    --Linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --Red : hsl(0, 100%, 66%);
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: #dedddf;
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+    --border: 1rem;
+}
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18;
+    margin: 0;
+    padding: 0;
+    padding-right: 1rem;
+}
+main{
+    display: flex;
+    height: 100vh;
+    Font-size: 18px
+}
+.leftB{
+    background-color: var(--Very-dark-violet);
+    width: 30%;
+    height: 100vh;
+}
+
+.righB{
+    height: 100vh;
+    width: calc(70%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+form{
+    width: 320px;
+}
+
+form label{
+    font-weight: 600;
+}
+.pack{
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.m-and-y{
+    display: block;
+    gap: 1rem;
+    width: 100%;
+}
+.m-and-y input{
+   width: 40px; 
+}
+
+.d-input{
+    display: flex;
+    gap: 1rem;
+}
+input{
+    width: 310px;
+    border-radius: 5px;
+    color: var(--Dark-grayish-violet);
+    border-color: var(--Light-grayish-violet);
+    border-width: 1px;
+    border-style: solid;
+    padding: 0.3rem;
+    font-size: 18px;
+}
+label{
+    font-size: 13px;
+    margin-top: 0px;
+}
+
+.cvcgroup input{
+    width: 120px;
+}
+
+button{
+    width: 320px;
+    padding: 10px;
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+    border-radius: 5px;
+    border-color: var(--Very-dark-violet);
+    font-size: 18px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+.cards{
+    position: absolute;
+    left: 150px;
+    height: 100vh;
+    width: 450px;
+}
+
+.cards-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img1{
+    height: 200px;
+    width: 320px;
+    position: absolute;
+    top: 150px;
+    left: 0;
+}
+
+.img2{
+    width: 320px;
+    height: 200px;
+    position: absolute;
+    top: 380px;
+    right: 0;
+    border-radius: 1rem;    
+}
+
+.img1  img{
+   background-size: cover; 
+   height: 100%;
+   width: 100%;
+   
+}
+
+.img2 img{
+    background-size: cover; 
+   height: 100%;
+   width: 100%;
+}
+
+.img1-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.nameAndDate{
+    flex-direction: column;
+    width: 100%;
+    
+    color: var(--White);
+    text-align: center;
+}
+.svg{
+    position: absolute;    
+}
+
+.svg img{
+    height: 40px;
+    width: 70px;
+}
+.digits{
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    display: block;
+    color: white;
+}
+
+.d{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    bottom: 35px;
+}
+.name{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 10px;
+    font-size: smaller;
+}
+
+
+.dig{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.three{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: var(--White);    
+}
+
+.three p{
+    position: absolute;
+    top: 70px;
+    right: 50px;
+}
+
+.img2-container{
+    position: relative;
+    height: 100%;
+    width: 100%;   
+}
+
+input.correct {
+    border-color: var(--Light-grayish-violet);
+}
+
+.incorrect {
+    border-color: #ff0000;
+}
+
+small{
+    font-size: x-small;
+    visibility: hidden;
+}
+.complete-component{
+
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+}
+
+.complete-component img{
+    height: 50px;
+}
+/* responsive design */
+
+@media(max-width: 1210px) {
+    .cards{
+        left: 100px;
+        width: 350px;
+    }
+
+}
+
+@media(max-width: 1024px) {
+    .leftB{
+      width: 20%;  
+    }
+
+    .righB{
+        justify-content: right;
+    }
+    
+}
+
+@media(max-width: 875px){
+    .cards{
+        font-size: 15px;
+        left: 60px;
+        width: 270px;
+    }
+
+    .img1, .img2{
+        width: 270px;
+        height: 150px;
+    }
+
+    .img1{
+        top: 200px;
+    }
+
+    .svg img{
+        height: 30px;
+        width: 50px;
+    }
+    
+    .d{
+        font-size: 20px;
+    }
+
+    .three p{
+        position: absolute;
+        top: 50px;
+        right: 40px;
+    }
+    
+}
+
+@media(max-width: 750px) {
+    .cards{
+        top: 0;
+        left: 110px;
+        width: 270px;
+        height: 310px;
+    }
+
+    .img1{
+        top: 10px;
+    }
+
+    .img2{
+        top: 160px;
+    }
+
+    form{
+        margin-top: 300px;
+    }
+    .complete-component{
+        top: 380px;
+    }
+
+    .righB{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 490px){
+    .leftB{
+        width: 5%;
+    }
+
+    .righB{
+        justify-content: right;
+        width: 95%;
+    }
+
+    .complete-component{
+        left: 60px;
+    }
+}
+
+/* mobile */
+@media(max-width: 375px)  {
+    .leftB{
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .righB{
+        width: 100vw;
+        height: 70vh;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        Font-size: 18px
+    }
+    
+    form{
+        margin-top: 50px;
+        width: 100%;
+        padding: 2rem;
+    }
+    
+    .complete-component{
+        top: 150px;
+        left: 20px;
+    }
+
+    .cards{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        top: 20px;
+        height: 40vh;
+        width: 375px;
+    }
+    
+
+    .cards-container{
+        width: 90%;
+        justify-self: center;
+    }
+
+    .img1, .img2{
+        width: 270px;
+        height: 150px;
+    }
+
+    .img1{
+        top: 105px;
+        z-index: 1;
+    }
+    .img2{
+        top: 20px;
+    }
+
+    .d{
+        font-size: 20px;
+    }
+
+    
+}
+
+@media(max-width: 360px) {
+    .img1{
+        left: 0px;
+    }
+
+    .img2{
+        left: 0px;
+    }
+
+    .cards-container{
+        width: 100%;
+        gap: 3rem;
+    }
+    form{
+        margin-top: 100px;
+        position: absolute;
+        width: 270px;
+    }
+    .pack{
+        width: 100%;
+    }
+    input{
+        width: 260px;
+    }
+    .cvcgroup input{
+        width: 100px;
+    }
+    button{
+        width: 270px;
+    }
+}
