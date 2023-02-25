@@ -308,7 +308,8 @@ small{
     }
 
     form{
-        margin-top: 300px;
+        position:fixed;
+        bottom: 10px;
     }
     .complete-component{
         top: 380px;
