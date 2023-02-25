@@ -316,6 +316,7 @@ small{
     }
 
     .righB{
+        min-height:600px
         justify-content: center;
     }
 }
